@@ -1,1 +1,86 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Cabin:ital,wght@0,700;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+:root {
+  /* SCSS RGB */
+  --bg-color: rgba(35, 35, 35, 1);
+  --swamp-green: rgba(73, 255, 24, 0.5);
+  --medium-slate-blue: rgba(139, 86, 254, 1);
+  --hunyadi-yellow: rgba(246, 174, 45, 1);
+  --russian-violet: rgba(55, 34, 100, 1);
+  --red-violet: rgba(204, 29, 136, 1);
+  --deep-sky-blue: rgba(0, 187, 249, 1);
+
+  /* SCSS Gradient  */
+  --gradient-top: linear-gradient(
+    0deg,
+    #8b56feff,
+    #f6ae2dff,
+    #372264ff,
+    #cc1d88ff,
+    #00bbf9ff
+  );
+  --gradient-right: linear-gradient(
+    90deg,
+    #8b56feff,
+    #f6ae2dff,
+    #372264ff,
+    #cc1d88ff,
+    #00bbf9ff
+  );
+  --gradient-bottom: linear-gradient(
+    180deg,
+    #8b56feff,
+    #f6ae2dff,
+    #372264ff,
+    #cc1d88ff,
+    #00bbf9ff
+  );
+  --gradient-left: linear-gradient(
+    270deg,
+    #8b56feff,
+    #f6ae2dff,
+    #372264ff,
+    #cc1d88ff,
+    #00bbf9ff
+  );
+  --gradient-top-right: linear-gradient(
+    45deg,
+    #8b56feff,
+    #f6ae2dff,
+    #372264ff,
+    #cc1d88ff,
+    #00bbf9ff
+  );
+  --gradient-bottom-right: linear-gradient(
+    135deg,
+    #8b56feff,
+    #f6ae2dff,
+    #372264ff,
+    #cc1d88ff,
+    #00bbf9ff
+  );
+  --gradient-top-left: linear-gradient(
+    225deg,
+    #8b56feff,
+    #f6ae2dff,
+    #372264ff,
+    #cc1d88ff,
+    #00bbf9ff
+  );
+  --gradient-bottom-left: linear-gradient(
+    315deg,
+    #8b56feff,
+    #f6ae2dff,
+    #372264ff,
+    #cc1d88ff,
+    #00bbf9ff
+  );
+  --gradient-radial: radial-gradient(
+    #8b56feff,
+    #f6ae2dff,
+    #372264ff,
+    #cc1d88ff,
+    #00bbf9ff
+  );
+}
