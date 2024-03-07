@@ -3,8 +3,9 @@
 
 :root {
   /* SCSS RGB */
-  --bg-color: rgba(35, 35, 35, 1);
+  --bg-color: rgba(0, 0, 0, 0.9);
   --swamp-green: rgba(73, 255, 24, 0.5);
+  --purple-complementary: rgba(206, 24, 255, 0.7);
   --medium-slate-blue: rgba(139, 86, 254, 1);
   --hunyadi-yellow: rgba(246, 174, 45, 1);
   --russian-violet: rgba(55, 34, 100, 1);
@@ -83,4 +84,15 @@
     #cc1d88ff,
     #00bbf9ff
   );
+}
+
+:host {
+  font-family: "ABeeZee", sans-serif;
+}
+body {
+  background-image: url(assets/images/background-2.jpg);
+  backdrop-filter: contrast(140%);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }

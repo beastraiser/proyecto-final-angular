@@ -1,11 +1,12 @@
 <!-- La maquetación del esqueleto principal está hecha con clases de Bootstrap en vez de un grid en CSS vanilla. Cada componente es un row. Dentro del main hay 2 componenetes donde cada uno ocupa una cantidad de columnas, según el tamaño de la pantalla. Las medidas especificadas son solo para el componente app-side-bar ya que el section ocupará siempre la cantidad de columnas restantes.
 De esta manera la página es totalmente responsive en los 3 dispositivos principales (escritorio, tablet y celulares) y el código es mucho más limpio. -->
-
-<app-navbar class="row"></app-navbar>
-<main class="row">
-  <app-sidebar class="col-lg-3 col-md-3 col-sm-12"></app-sidebar>
-  <section class="col">
-    <router-outlet>content</router-outlet>
-  </section>
-</main>
-<app-footer class="row"></app-footer>
+<div class="container-fluid">
+  <app-navbar class="row sticky-top"></app-navbar>
+  <main class="row flex-nowrap">
+    <app-sidebar class="col-auto px-0 sidebar-cont"></app-sidebar>
+    <app-content class="col ps-md-2 pt-3">
+      <router-outlet>content</router-outlet>
+    </app-content>
+  </main>
+  <app-footer class="row"></app-footer>
+</div>

@@ -1,0 +1,10 @@
+.menu-button {
+  color: var(--purple-complementary);
+  border: 2px solid rgb(159, 144, 162);
+  background-color: var(--bg-color);
+  opacity: 0.8;
+}
+
+.menu-button:hover {
+  opacity: 1;
+}
