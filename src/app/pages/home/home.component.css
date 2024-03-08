@@ -1,9 +1,16 @@
-main {
-  height: 85vh;
+.home-container {
+  min-height: 80vh;
 }
 
-.paginas-cont {
-  background: rgba(0, 0, 0, 0.5);
+.txt-shadow {
+  -webkit-text-stroke: 1px var(--purple-complementary);
+  text-shadow: 0px 2px 4px black;
+  font-weight: bold;
+  color: var(--purple-complementary);
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.9);
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.22),
     1px 0px 0px 0px rgba(0, 0, 0, 0.22), 1px 2px 0px 0px rgba(0, 0, 0, 0.22),
     2px 1px 0px 0px rgba(0, 0, 0, 0.22), 2px 3px 0px 0px rgba(0, 0, 0, 0.22),
@@ -13,5 +20,19 @@ main {
     6px 5px 0px 0px rgba(0, 0, 0, 0.22), 6px 7px 0px 0px rgba(0, 0, 0, 0.22),
     7px 6px 0px 0px rgba(0, 0, 0, 0.22), 7px 8px 0px 0px rgba(0, 0, 0, 0.22),
     8px 7px 0px 0px rgba(0, 0, 0, 0.22);
-  color: #f6ae2dff;
+}
+
+.but1 {
+  background-color: rgba(195, 14, 46, 0.5);
+}
+.but2 {
+  background-color: rgba(133, 69, 202, 0.5);
+}
+.but3 {
+  background-color: rgba(68, 193, 237, 0.5);
+}
+
+.btn:hover {
+  scale: 1.1;
+  filter: brightness(120%);
 }

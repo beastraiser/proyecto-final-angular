@@ -2,11 +2,12 @@
 De esta manera la página es totalmente responsive en los 3 dispositivos principales (escritorio, tablet y celulares) y el código es mucho más limpio. -->
 <div class="container-fluid">
   <app-navbar class="row sticky-top"></app-navbar>
-  <main class="row flex-nowrap">
+  <main class="row flex-nowrap overflow-auto">
     <app-sidebar class="col-auto px-0 sidebar-cont"></app-sidebar>
-    <app-content class="col ps-md-2 pt-3">
-      <router-outlet>content</router-outlet>
-    </app-content>
+    <app-content class="col-1 pt-2 px-1"></app-content>
+    <div class="col ps-md-2 pt-3 paginas.cont">
+      <router-outlet></router-outlet>
+    </div>
   </main>
   <app-footer class="row"></app-footer>
 </div>
