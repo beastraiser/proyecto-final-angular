@@ -14,6 +14,7 @@ export const routes: Routes = [
   { path: 'pokeapi', component: PokeapiComponent },
   { path: 'cocktail', component: CocktailComponent },
   { path: 'dogs', component: DogsComponent },
+
   { path: 'adivinanza', component: AdivinanzaComponent },
   { path: 'ahorcado', component: AhorcadoComponent },
   { path: 'calculadorabmi', component: CalculadorabmiComponent },
