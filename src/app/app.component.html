@@ -4,9 +4,8 @@ De esta manera la página es totalmente responsive en los 3 dispositivos princip
   <app-navbar class="row sticky-top"></app-navbar>
   <main class="row flex-nowrap overflow-auto">
     <app-sidebar class="col-auto px-0 sidebar-cont"></app-sidebar>
-    <!-- 🐱‍👤: si vas a dejar aqui el botón del sidebar, cambiale el nombre al componente, porque puede ser confuso, en lugar de llamarle 'app-content' llamalo 'app-buton-sidebar' o algo así, pero mi recomendación es que si te da tiempo metas el botón en 'sidebar-component' :)  -->
     <app-content class="col-1 pt-2 px-1"></app-content>
-    <div class="col ps-md-2 pt-3 paginas.cont">
+    <div class="col ps-md-2 pt-3">
       <router-outlet></router-outlet>
     </div>
   </main>

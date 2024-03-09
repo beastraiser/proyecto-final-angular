@@ -1,20 +1,26 @@
-<h1>Adivina el número</h1>
-<p>Introduce un número entre 1 y 100:</p>
-<input
-  type="number"
-  id="numeroEntrada"
-  min="1"
-  max="100"
-  [(ngModel)]="numeroEntrada"
-  [disabled]="inputDisabled"
-/>
-<button (click)="comprobarNumero()" id="button" [disabled]="inputDisabled">
-  Comprobar
-</button>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-4 col-md-6 col-sm-8 text-center cont">
+      <h1 class="mt-5 txt-shadow">Adivina el número</h1>
+      <p class="txt-shadow text-white">Introduce un número entre 1 y 100:</p>
+      <input
+        [(ngModel)]="numeroEntrada"
+        type="number"
+        class="form-control mb-3"
+        min="1"
+        max="100"
+      />
 
-<p id="mensaje">{{ mensaje }}</p>
+      <button (click)="comprobarNumero()" class="btn btn-dark mb-3 w-100">
+        Comprobar
+      </button>
 
-<h4>
-  Cantidad de intentos:
-  <p id="intentos-input">{{ intentos }}</p>
-</h4>
+      <p id="mensaje"></p>
+
+      <h4>
+        Cantidad de intentos:
+        <p id="intentos-input">0</p>
+      </h4>
+    </div>
+  </div>
+</div>
