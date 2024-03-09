@@ -15,6 +15,7 @@ export class AdivinanzaComponent {
   intentos: number = 0;
   mensaje: string = '';
   numeroEntrada!: number;
+  inputDisabled: boolean = false;
 
   constructor() {
     this.numeroSecreto = this.randomNumber(1, 100);
@@ -42,6 +43,11 @@ export class AdivinanzaComponent {
       : 'Demasiado bajo';
 
     this.intentos++;
+
+    // Deshabilitar el input y el botón si se acierta el número
+    if (acierto) {
+      this.inputDisabled = true;
+    }
   }
   randomNumber(from: number, to: number) {
     return Math.trunc(Math.random() * to + from);
