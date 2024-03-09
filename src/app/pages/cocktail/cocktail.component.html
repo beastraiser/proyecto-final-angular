@@ -1,0 +1,23 @@
+<div>
+  <h2>Buscar Cocktail por Nombre</h2>
+  <input
+    type="text"
+    [(ngModel)]="cocktailName"
+    placeholder="Nombre del Cocktail"
+  />
+  <button (click)="searchCocktail()">Buscar</button>
+</div>
+
+@if(cocktail){
+<div>
+  <h2>{{ cocktail.strDrink }}</h2>
+  <img [src]="cocktail.strDrinkThumb" alt="{{ cocktail.strDrink }}" />
+  <p>Ingredientes:</p>
+  <ul>
+    @for(ingredient of ingredients; track ingredients){
+    <li>{{ ingredient }}</li>
+    }
+  </ul>
+  <p>Instrucciones: {{ cocktail.strInstructions }}</p>
+</div>
+}

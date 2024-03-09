@@ -1,0 +1,8 @@
+<div>
+  <h2>Imagen Aleatoria de Perro</h2>
+  <button (click)="getRandomDog()">icono rueda</button>
+  <br />
+  @if(dogImage) {
+  <img [src]="dogImage" alt="Perro Aleatorio" />
+  }
+</div>
