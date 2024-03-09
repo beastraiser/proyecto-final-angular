@@ -1,0 +1,10 @@
+<div>
+  <h1>Juego del Ahorcado</h1>
+  <p>Palabra: {{ palabraMostrada }}</p>
+  <p>Letras usadas: {{ letrasUsadas.join(", ") }}</p>
+  <p>
+    Ingresa una letra:
+    <input type="text" [(ngModel)]="letraIngresada" maxlength="1" />
+    <button (click)="procesarLetra()">Comprobar</button>
+  </p>
+</div>
