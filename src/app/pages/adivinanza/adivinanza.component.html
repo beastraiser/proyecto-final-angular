@@ -1,14 +1,17 @@
-<div class="container-juego">
-  <h1>Adivina el número</h1>
-  <p>Introduce un número entre 1 y 100:</p>
-  <input [(ngModel)]="numeroEntrada" type="number" min="1" max="100" />
+<h1>Adivina el número</h1>
+<p>Introduce un número entre 1 y 100:</p>
+<input
+  type="number"
+  id="numeroEntrada"
+  min="1"
+  max="100"
+  [(ngModel)]="numeroEntrada"
+/>
+<button (click)="comprobarNumero()" id="button">Comprobar</button>
 
-  <button id="button">Comprobar</button>
+<p id="mensaje">{{ mensaje }}</p>
 
-  <p id="mensaje"></p>
-
-  <h4>
-    Cantidad de intentos:
-    <p id="intentos-input">0</p>
-  </h4>
-</div>
+<h4>
+  Cantidad de intentos:
+  <p id="intentos-input">{{ intentos }}</p>
+</h4>
