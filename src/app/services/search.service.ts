@@ -10,6 +10,7 @@ export class SearchService {
     { nombre: 'pokeapi', icono: 'film' },
     { nombre: 'cocktail', icono: 'heart' },
     { nombre: 'dogs', icono: 'bricks' },
+    { nombre: 'dogdex', icono: 'android' },
     // Agrega más elementos aquí con sus respectivos iconos
   ];
 

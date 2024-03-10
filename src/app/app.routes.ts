@@ -7,6 +7,7 @@ import { CalculadorabmiComponent } from './pages/calculadorabmi/calculadorabmi.c
 import { PokeapiComponent } from './pages/pokeapi/pokeapi.component';
 import { CocktailComponent } from './pages/cocktail/cocktail.component';
 import { DogsComponent } from './pages/dogs/dogs.component';
+import { DogdexComponent } from './pages/dogdex/dogdex.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,7 +15,7 @@ export const routes: Routes = [
   { path: 'pokeapi', component: PokeapiComponent },
   { path: 'cocktail', component: CocktailComponent },
   { path: 'dogs', component: DogsComponent },
-
+  { path: 'dogdex', component: DogdexComponent },
   { path: 'adivinanza', component: AdivinanzaComponent },
   { path: 'ahorcado', component: AhorcadoComponent },
   { path: 'calculadorabmi', component: CalculadorabmiComponent },
