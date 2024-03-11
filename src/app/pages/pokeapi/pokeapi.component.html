@@ -1,37 +1,7 @@
-<!-- <div>
-  <h2>Buscar Pokémon por nombre</h2>
-  <input
-    type="text"
-    [(ngModel)]="pokemonName"
-    placeholder="Nombre del Pokémon"
-  />
-  <button (click)="getPokemonDetails()">Buscar</button>
-</div>
-
-@if (pokemon) {
-<div>
-  <h2>{{ pokemon.name }}</h2>
-  <p>ID: {{ pokemon.id }}</p>
-  <p>Peso: {{ pokemon.weight }}</p>
-  <p>Altura: {{ pokemon.height }}</p>
-  <h3>Habilidades:</h3>
-  <ul>
-    @for(ability of pokemon.abilities; track ability){
-    <li>
-      {{ ability.ability.name }}
-    </li>
-    }
-  </ul>
-  <img
-    [src]="pokemon.sprites.front_default"
-    alt="Imagen de {{ pokemon.name }}"
-  />
-</div>
-} -->
 <div class="container">
   <div class="row justify-content-center p-3">
+    <h1 class="txt-shadow mt-5 text-center">Buscar Pokémon por nombre</h1>
     <div class="col-lg-8 text-center cont p-4">
-      <h1 class="txt-shadow mb-3">Buscar Pokémon por nombre</h1>
       <div class="mb-3">
         <input
           type="text"
