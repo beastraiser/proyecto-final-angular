@@ -9,32 +9,10 @@
         (input)="buscarElemento($event)"
       />
     </div>
-    <!-- <a
-      routerLink="/clima"
-      class="list-group-item text-truncate my-2 mx-2 p-4"
-      data-bs-parent="#sidebar"
-      ><i class="bi bi-thermometer-snow"></i> <span>clima</span>
-    </a>
-    <a
-      routerLink="/pokeapi"
-      class="list-group-item border-end-0 d-inline-block text-truncate my-2 mx-2 p-4"
-      data-bs-parent="#sidebar"
-      ><i class="bi bi-film"></i> <span>pokeapi</span></a
-    ><a
-      routerLink="/cocktail"
-      class="list-group-item border-end-0 d-inline-block text-truncate my-2 mx-2 p-4"
-      data-bs-parent="#sidebar"
-      ><i class="bi bi-heart"></i> <span>cocktail</span></a
-    ><a
-      routerLink="/dogs"
-      class="list-group-item border-end-0 d-inline-block text-truncate my-2 mx-2 p-4"
-      data-bs-parent="#sidebar"
-      ><i class="bi bi-bricks"></i> <span>dogs</span></a
-    > -->
     @for(elemento of elementosEncontrados; track elemento) {
     <a
       routerLink="/{{ elemento.nombre }}"
-      class="list-group-item border-end-0 d-inline-block text-truncate my-2 mx-2 p-4"
+      class="list-group-item border-end-0 d-inline-block text-truncate my-2 ms-4 p-4"
       data-bs-parent="#sidebar"
     >
       <i class="bi bi-{{ elemento.icono }}"></i>
