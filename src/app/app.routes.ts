@@ -9,6 +9,7 @@ import { CocktailComponent } from './pages/cocktail/cocktail.component';
 import { DogsComponent } from './pages/dogs/dogs.component';
 import { DogdexComponent } from './pages/dogdex/dogdex.component';
 
+// Definimos las rutas de cada uno de nuestros componentes de pages/...
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'clima', component: ClimaComponent },

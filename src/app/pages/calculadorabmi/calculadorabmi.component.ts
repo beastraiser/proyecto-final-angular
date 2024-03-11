@@ -15,10 +15,12 @@ export class CalculadorabmiComponent {
   bmi: number = 0; // Índice de Masa Corporal (BMI)
 
   calcularBMI(): void {
+    // Método para calcular el índice de masa corporal (BMI)
     if (this.altura > 0 && this.peso > 0) {
-      this.bmi = this.peso / (this.altura * this.altura);
+      // Verificamos que la altura y el peso sean mayores que cero para evitar divisiones por cero
+      this.bmi = this.peso / (this.altura * this.altura); // Calculamos el BMI
     } else {
-      this.bmi = 0;
+      this.bmi = 0; // Si la altura o el peso son cero o negativos, el BMI es cero
     }
   }
 }
