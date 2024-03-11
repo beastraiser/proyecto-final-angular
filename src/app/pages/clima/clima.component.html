@@ -15,7 +15,7 @@
       >
         Buscar
       </button>
-      @if (datosClima.ciudadNombre) {
+      @if (datosClima) {
       <div class="card p-4 mt-3" id="datos-clima">
         <div class="d-flex">
           <h6 class="flex-grow-1">{{ datosClima.paisNombre }}</h6>
@@ -55,7 +55,7 @@
         </div>
       </div>
       }
-      <!-- @else {
+      <!-- @else if(datosClima.error) {
       <h1 class="text-center">Clima no disponible</h1>
       } -->
     </div>

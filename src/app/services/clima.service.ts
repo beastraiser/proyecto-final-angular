@@ -18,8 +18,9 @@ export class ClimaService {
 
   // Método para buscar datos climáticos de una ciudad específica
   buscarClima(ciudad: string): Observable<any> {
+    const url = `${this.urlBase}?q=${ciudad}&appid=${this.apiKey}`;
     // Realización de una solicitud GET a la API y devolución del resultado como un Observable
-    return this._http.get(`${this.urlBase}?q=${ciudad}&appid=${this.apiKey}`);
+    return this._http.get(url);
   }
 
   // Método para procesar los datos climáticos recibidos de la API
