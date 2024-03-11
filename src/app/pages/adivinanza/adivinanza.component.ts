@@ -15,7 +15,7 @@ export class AdivinanzaComponent {
   intentos: number = 0;
   mensaje: string = '';
   numeroEntrada!: number;
-  inputDisabled: boolean = false;
+  inputDisabled: boolean = false; // Bandera para indicar si el usuario acertó
 
   constructor() {
     this.numeroSecreto = this.randomNumber(1, 100);
@@ -44,7 +44,6 @@ export class AdivinanzaComponent {
 
     this.intentos++;
 
-    // Deshabilitar el input y el botón si se acierta el número
     if (acierto) {
       this.inputDisabled = true;
     }
