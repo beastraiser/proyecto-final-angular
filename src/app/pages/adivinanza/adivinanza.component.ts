@@ -15,7 +15,7 @@ export class AdivinanzaComponent {
   intentos: number = 0;
   mensaje: string = '';
   numeroEntrada!: number;
-  acierto: boolean = false; // Bandera para indicar si el usuario acertó
+  inputDisabled: boolean = false; // Bandera para indicar si el usuario acertó
 
   constructor() {
     this.numeroSecreto = this.randomNumber(1, 100);
@@ -43,6 +43,10 @@ export class AdivinanzaComponent {
       : 'Demasiado bajo';
 
     this.intentos++;
+
+    if (acierto) {
+      this.inputDisabled = true;
+    }
   }
   randomNumber(from: number, to: number) {
     return Math.trunc(Math.random() * to + from);
