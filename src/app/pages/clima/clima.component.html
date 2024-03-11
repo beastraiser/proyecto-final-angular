@@ -1,24 +1,20 @@
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-lg-8 contenedor p-3">
-      <!-- -------Buscador------- -->
-      <h1 class="text-center shadow">Aplicación de Clima</h1>
-
+<div class="container">
+  <div class="row justify-content-center p-3">
+    <h1 class="text-center txt-shadow mt-5">Aplicación de Clima</h1>
+    <div class="col-lg-8 contenedor p-4">
       <input
         type="text"
         [(ngModel)]="ciudad"
         placeholder="Ingrese una ciudad"
-        class="form-control"
+        class="form-control mb-3"
       />
       <button
         (click)="buscarClima(ciudad)"
         id="botonBusqueda"
-        class="btn btn-dark w-100 mt-1"
+        class="btn btn-dark w-100 mb-3"
       >
         Buscar
       </button>
-
-      <!-- ----------------------- -->
       @if (datosClima.ciudadNombre) {
       <div class="card p-4 mt-3" id="datos-clima">
         <div class="d-flex">
