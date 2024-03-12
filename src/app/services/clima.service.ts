@@ -33,6 +33,9 @@ export class ClimaService {
       humedad: data.main.humidity,
       descripcion: data.weather[0].description,
       icono: `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`,
+      viento: data.wind.speed,
+      hora: new Date().getHours() + ':' + new Date().getMinutes(),
+      tempMax: Math.floor(data.main.temp_max - this.difKelvin),
     };
   }
 }
